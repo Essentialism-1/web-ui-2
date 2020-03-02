@@ -1,0 +1,46 @@
+.intro{
+position: relative;
+z-index: -1;
+}
+
+.introText {
+  position: absolute;
+  left: 70px;
+  bottom: 340px;
+  width: 40%;
+  h2{
+      font-size: 35px;
+      padding: 2% 0;
+  }
+  h3{
+      padding: 2% 0;
+      line-height: 1.5;
+      margin-bottom: 1%;
+  }
+  .btn{
+      .button(@hover-color, @font-color);
+      
+  }
+
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.main .item{
+    display: flex;
+    img{
+        width: 48%;
+    }
+    .text{
+        width: 49%;
+        padding: 10%;
+
+    }
+    margin: 2% 0;
+}

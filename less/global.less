@@ -1,0 +1,61 @@
+
+
+
+
+body {
+	line-height: 1;
+}
+
+html, body {
+    height: 100%;
+}
+
+*{
+	box-sizing:border-box;
+	padding:0;
+	margin:0;
+	max-width:100%; 
+  }
+
+body{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+	
+}
+
+header, section, footer{
+	width: 80%;
+	margin: 0 auto;
+}
+
+h2, h3, p, a{
+	font-family: @main-font;
+}
+
+h1{
+	font-family: @title-font;
+	font-size: 30px;
+}
+
+
+
+
+header nav{
+	display: flex;
+
+	width: 75%;
+	color:grey;
+	padding: 1%;
+	justify-content: space-between;
+}
+
+nav a{
+	font-size: 14px;
+	color: grey;
+	text-decoration: none;
+}
+nav a:hover{
+	color: darkblue;
+}
