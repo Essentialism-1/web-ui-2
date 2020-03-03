@@ -1,15 +1,16 @@
 .intro{
 position: relative;
-z-index: -1;
+img{
+    z-index: -1;
+
+}
 }
 
 .intro .btn{
     position: absolute;
-    
     .button(@hover-color, @font-color);
       &:hover{
         .button(@font-color, @hover-color);
-        z-index: 1;
 
       }
 
