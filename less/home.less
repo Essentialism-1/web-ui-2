@@ -3,33 +3,37 @@ position: relative;
 z-index: -1;
 }
 
+.intro .btn{
+    position: absolute;
+    
+    .button(@hover-color, @font-color);
+      &:hover{
+        .button(@font-color, @hover-color);
+        z-index: 1;
+
+      }
+
+}
 .introText {
   position: absolute;
   left: 70px;
-  bottom: 340px;
+  bottom: 380px;
   width: 40%;
   h2{
       font-size: 35px;
       padding: 2% 0;
+     
   }
   h3{
       padding: 2% 0;
       line-height: 1.5;
       margin-bottom: 1%;
   }
-  .btn{
-      .button(@hover-color, @font-color);
 
-  }
-
-  .btn:hover{
-    hover{
-        .button(@font-color, @hover-color);
-        letter-spacing: 2px;
-    }
-  }
+  
 
 }
+
 
 .main{
     display: flex;
