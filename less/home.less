@@ -19,7 +19,14 @@ z-index: -1;
   }
   .btn{
       .button(@hover-color, @font-color);
-      
+
+  }
+
+  .btn:hover{
+    hover{
+        .button(@font-color, @hover-color);
+        letter-spacing: 2px;
+    }
   }
 
 }
@@ -36,11 +43,24 @@ z-index: -1;
     display: flex;
     img{
         width: 48%;
+       .box-shadow();
+
     }
     .text{
         width: 49%;
-        padding: 10%;
+        padding: 10% 5%;
+        h2{
+            font-size: 30px;
+            padding-bottom: 4%;
+        }
+        p{
+            font-size: 14px;
+            line-height: 1.5;
+
+        }
+
 
     }
     margin: 2% 0;
+
 }

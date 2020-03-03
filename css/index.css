@@ -183,23 +183,24 @@ header {
   padding: 1% 0;
 }
 header h1 {
-  width: 48%;
+  width: 58%;
   padding: 0 1%;
   letter-spacing: 1.5px;
 }
 header nav {
   display: flex;
-  width: 50%;
+  width: 40%;
   color: grey;
   justify-content: space-between;
 }
 nav a {
-  font-size: 12px;
-  color: grey;
+  font-size: 14px;
+  color: #222627;
   text-decoration: none;
 }
 nav a:hover {
   color: #7C918F;
+  letter-spacing: 2px;
 }
 .intro {
   position: relative;
@@ -233,6 +234,20 @@ nav a:hover {
   font-weight: bold;
   cursor: pointer;
 }
+.introText .btn:hover hover {
+  background-color: #222627;
+  color: #7C918F;
+  font-size: 14px;
+  width: 30%;
+  padding: 3% 2%;
+  text-align: center;
+  border-radius: 10px;
+  font-family: 'Noto Sans SC';
+  letter-spacing: 1px;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
 .main {
   display: flex;
   flex-direction: column;
@@ -245,8 +260,17 @@ nav a:hover {
 }
 .main .item img {
   width: 48%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .main .item .text {
   width: 49%;
-  padding: 10%;
+  padding: 10% 5%;
+}
+.main .item .text h2 {
+  font-size: 30px;
+  padding-bottom: 4%;
+}
+.main .item .text p {
+  font-size: 14px;
+  line-height: 1.5;
 }
