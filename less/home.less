@@ -4,9 +4,8 @@ img{
     z-index: -1;
 
 }
-}
 
-.intro .btn{
+.btn{
     position: absolute;
     .button(@hover-color, @font-color);
       &:hover{
@@ -15,10 +14,36 @@ img{
       }
 
 }
+@media @tablet{
+    position: static;
+    margin-top: 10%;
+    img.mount{
+        display: none;
+    }
+    .btn{
+        position: static;
+        width: 20%;
+        padding: 1%;
+        margin-bottom: 3%;
+      
+    }
+}
+@media @mobile{
+    .btn{
+        width: 50%;
+        margin-bottom: 3%;
+    }
+}
+}
+
+
 .introText {
   position: absolute;
   left: 70px;
   bottom: 380px;
+  @media (max-width: 1024px){
+      bottom: 250px;
+  }
   width: 40%;
   h2{
       font-size: 3.5rem;
@@ -32,7 +57,11 @@ img{
       font-size: 1.5rem;
   }
 
-  
+  @media @tablet{
+    position: static;
+    width: 100%;
+    text-align: center;
+}
 
 }
 
@@ -50,10 +79,16 @@ img{
     img{
         width: 48%;
        .box-shadow();
+       @media @tablet{
+           width: 100%;
+       }
 
     }
     .text{
         width: 49%;
+        @media @tablet{
+            width: 100%;
+        }
         padding: 10% 5%;
         h2{
             font-size: 3rem;
@@ -65,8 +100,23 @@ img{
 
         }
 
+        
+
 
     }
     margin: 2% 0;
 
+}
+
+@media @tablet {
+    .item{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        
+    
+    }
+
+    
 }

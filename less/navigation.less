@@ -2,8 +2,12 @@
 header{
     z-index: 2;
     display: flex;
+    
     h1{
         width: 58%;
+        @media @mobile{
+            width: 100%;
+        }
         padding: 0 1%;
         letter-spacing: 1.5px;
         padding-top: 1%;
@@ -18,16 +22,39 @@ header nav{
     padding-top: 1%;
 	display: flex;
 
-	width: 40%;
+    width: 40%;
+    @media @mobile{
+        width: 90%;
+    }
 	justify-content: space-between;
 }
 
 nav a{
 	font-size: 1.3rem;
 	color: @font-color;
-	text-decoration: none;
+    text-decoration: none;
+    
 }
 nav a:hover{
     color: @hover-color;
     letter-spacing: 2px;
+}
+
+@media @mobile{
+    header{
+        position: static;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        
+        h1{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 1%;
+            margin-top: 3%;
+        }
+        nav{
+            width: 100%;
+        }
+    }
 }

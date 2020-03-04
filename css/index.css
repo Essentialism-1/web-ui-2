@@ -180,11 +180,21 @@ header h1 {
   letter-spacing: 1.5px;
   padding-top: 1%;
 }
+@media (max-width: 500px) {
+  header h1 {
+    width: 100%;
+  }
+}
 header nav {
   padding-top: 1%;
   display: flex;
   width: 40%;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 90%;
+  }
 }
 nav a {
   font-size: 1.3rem;
@@ -194,6 +204,23 @@ nav a {
 nav a:hover {
   color: #7C918F;
   letter-spacing: 2px;
+}
+@media (max-width: 500px) {
+  header {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+  header h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1%;
+    margin-top: 3%;
+  }
+  header nav {
+    width: 100%;
+  }
 }
 .intro {
   position: relative;
@@ -228,11 +255,37 @@ nav a:hover {
   font-weight: bold;
   cursor: pointer;
 }
+@media (max-width: 800px) {
+  .intro {
+    position: static;
+    margin-top: 10%;
+  }
+  .intro img.mount {
+    display: none;
+  }
+  .intro .btn {
+    position: static;
+    width: 20%;
+    padding: 1%;
+    margin-bottom: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .intro .btn {
+    width: 50%;
+    margin-bottom: 3%;
+  }
+}
 .introText {
   position: absolute;
   left: 70px;
   bottom: 380px;
   width: 40%;
+}
+@media (max-width: 1024px) {
+  .introText {
+    bottom: 250px;
+  }
 }
 .introText h2 {
   font-size: 3.5rem;
@@ -243,6 +296,13 @@ nav a:hover {
   line-height: 1.5;
   margin-bottom: 1%;
   font-size: 1.5rem;
+}
+@media (max-width: 800px) {
+  .introText {
+    position: static;
+    width: 100%;
+    text-align: center;
+  }
 }
 .main {
   display: flex;
@@ -258,9 +318,19 @@ nav a:hover {
   width: 48%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+@media (max-width: 800px) {
+  .main .item img {
+    width: 100%;
+  }
+}
 .main .item .text {
   width: 49%;
   padding: 10% 5%;
+}
+@media (max-width: 800px) {
+  .main .item .text {
+    width: 100%;
+  }
 }
 .main .item .text h2 {
   font-size: 3rem;
@@ -269,6 +339,13 @@ nav a:hover {
 .main .item .text p {
   font-size: 1.4rem;
   line-height: 1.5;
+}
+@media (max-width: 800px) {
+  .item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }
 #aboutHeader {
   background-color: #FCFCFE;
@@ -291,6 +368,11 @@ nav a:hover {
 .about .person img {
   width: 100%;
 }
+@media (max-width: 500px) {
+  .about .person {
+    width: 100%;
+  }
+}
 .about .text h2 {
   text-align: center;
   font-size: 2rem;
@@ -300,4 +382,9 @@ nav a:hover {
   text-align: center;
   letter-spacing: 1.4px;
   font-size: 1.4rem;
+}
+@media (max-width: 500px) {
+  .intro img {
+    display: none;
+  }
 }
