@@ -1,4 +1,4 @@
-Team:
+Team: Essentialism
 
 Project Lead: Eralp Kor
 Backend Developer: Roberto Banbanaste
