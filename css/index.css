@@ -383,6 +383,37 @@ nav a:hover {
   letter-spacing: 1.4px;
   font-size: 1.4rem;
 }
+.cont {
+  position: relative;
+}
+.cont img {
+  opacity: 1;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.cont .imgtxt {
+  position: absolute;
+  transition: 0.5s ease;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-evenly;
+}
+.cont .imgtxt img {
+  width: 40%;
+  height: auto;
+  padding: 0 3%;
+  cursor: pointer;
+}
+.cont:hover img {
+  opacity: 0.3;
+}
+.cont:hover .imgtxt {
+  opacity: 1;
+}
 @media (max-width: 500px) {
   .intro img {
     display: none;

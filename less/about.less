@@ -41,6 +41,49 @@ font-size: 4rem;
 
 }
 
+
+
+.cont {
+    position: relative;
+
+    img{
+        opacity: 1;
+       
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+}
+
+
+.cont .imgtxt{
+    position: absolute;
+    
+    transition: .5s ease;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-evenly;
+  img{
+      width: 40%;
+      height: auto;
+      padding: 0 3%;
+      cursor: pointer;
+      
+  }
+}
+
+.cont:hover img {
+    opacity: 0.3;
+  }
+  
+  .cont:hover .imgtxt {
+    opacity: 1;
+  }
+
 @media @mobile{
     .intro img{
         display: none;
